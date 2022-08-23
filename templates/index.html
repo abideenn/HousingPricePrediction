@@ -11,7 +11,7 @@
     font-family: 'Montserrat', sans-serif;
   }
   .title{
-    font-family: 'Sacramento', cursive;
+    font-family: 'Arial';
     font-size: x-large;
     letter-spacing: 5px;
   }
@@ -24,7 +24,7 @@
       <div class="para">
         <h1 style="text-align: center;">House Price Predictor</h1>
 
-        <img src="/static/Images/house.jpg" />
+        <img src="/static/Images/house.jpeg" />
 
         <div style="display: flexbox; margin: 0 auto 0 auto;text-align:center">
           <a class='myButton' href={{ url_for('homepage') }}><b>Predict</b></a>
@@ -33,35 +33,21 @@
         <br><br>
         
         Predicting house prices is one of the biggest problems in the Real Estate industry. Using the 'Miami 
-        House Prediction' dataset we shall go over some of the main reasons why customer churn happens 
-        and also build a model to predict if a customer will churn or not.
+        House Prediction' dataset we shall go over some of the main techniques which I have used to solve this problem.
 
         <br><br>
-
-        <b style="font-size: larger;">What is Customer Churn?</b><br><br>
-        Customer churn is the percentage of customers your business lost in a set period of time.
-
-        For instance, if you had 100 customers at the beginning of the month, and lost 10 of them throughout 
-        the month, you had a 10% churn rate for the month. Once a customer cancels their account or stops
-        paying for their subscription, they’ve “churned”. The more customers retained, the lower your churn rate.
+        <b style="font-size: larger;">My Approach towards this problem</b><br><br>
+       The main features used while solving this problem of predicting the prices of houses are Latitude, Longitude,
+        Parcel No., Land Square Foot, Floor Area, Value of Special Features, Distance to nearest Railway, Distance to 
+        nearest Ocean, Distance to central business district, Distance to nearest subcenter, Distance to nearest highway,
+        Age of the structure, Sale month, Quality of Structure.
         <br><br>
-        The higher the churn rate, the more difficult it is to grow because you’ll constantly be chasing new 
-        customers to replace the ones that are churning. To build sustainable growth, you need to keep your churn 
-        rate as low as possible while you acquire new customers. One thing to keep in mind though, is that every
-        business has some customer churn. A product won’t always be the right fit for everyone, but its alright as
-          long as the company does everything to keep your churn as low as possible.
+        I have tried various models to predict the price of houses like Linear Regession, Logistic Regression, Decision 
+        Tree Regreesion, Random Forest, XGBoost and Neural Network. I got best results from Xgboost i.e. a score of 93%.
+        While preprocessing the dataset, I observed that the distribution of data points of prices were left skewed. So, 
+        I took log of all the prices and it resulted in normal distribution. This also helped in decreasing the MSE.
         <br><br>
-        Customers in the telecom industry can choose from a variety of service providers and actively switch from one
-        to the next. The telecommunications business has an annual churn rate of 15-25 percent in this highly competitive 
-        market. Individualized customer retention is tough because most firms have a large number of customers and can't 
-        afford to devote much time to each of them. The costs would be too great, outweighing the additional revenue.
-        However, if a corporation could forecast which customers are likely to leave ahead of time, it could focus 
-        customer retention efforts only on these "high risk" clients. The ultimate goal is to expand its coverage area 
-        and retrieve more customers loyalty. The core to succeed in this market lies in the customer itself.
-
-        Customer churn is a critical metric because it is much less expensive to retain existing customers than it is to acquire new customers.<br><br>
-
-        <b>So, if you want to try to predict if the customer is a 'Churner or a 'Non-Churner' click on Predict</b>
+        <b>So, if you want to try to predict the price of your house click on Predict</b>
     </div>
   </body>
 
