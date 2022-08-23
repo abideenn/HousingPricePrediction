@@ -1,7 +1,7 @@
 body{
   font-family: 'Merriweather Sans', sans-serif;
   text-align: center;
-  background-color: #CDF0EA;
+  background-color: #5e5c5b;
   color:white;
   margin:20%;
   margin-top: 0%;
@@ -9,10 +9,10 @@ body{
 
 .myButton {
 	box-shadow:inset 1px -3px 6px -1px #152538;
-	background:linear-gradient(to bottom, #57c5d4 5%, #418a9c 100%);
-	background-color:#57c5d4;
+	background:linear-gradient(to bottom, #eea16b 5%, #F17925 100%);
+	background-color:#F17925;
 	border-radius:6px;
-	border:1px solid #244e8a;
+	border:1px solid #723d17;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -24,8 +24,8 @@ body{
 	text-shadow:0px -1px 0px #22282e;
 }
 .myButton:hover {
-	background:linear-gradient(to bottom, #418a9c 5%, #57c5d4 100%);
-	background-color:#418a9c;
+	background:linear-gradient(to bottom, #F17925 5%,#f5b98d  100%);
+	background-color:#F17925;
 }
 h1{
   padding-bottom: 2%;
@@ -39,7 +39,7 @@ h1{
 
   background-color:white;
   padding: 5% 5% 0% 5%;
-  color: black;
+  color: #5e5c5b;
   font-size: large;
   text-align: left;
   padding-bottom: 5%;
@@ -54,7 +54,7 @@ img{
 
 .title{
   font-family: 'Sacramento', cursive;
-  background-color:#418a9c;
+  background-color:#F17925;
   padding: 3%;
 
 }
