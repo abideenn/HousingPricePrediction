@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Churn Prediction</title>
+    <title>House Price Predictor</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel= "stylesheet" type= "text/css" href="{{ url_for('static',filename='CSS/styles.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
@@ -18,13 +18,13 @@
 </style>
   <body>
       <div class="title" style="margin-top: 0%;">
-        <h1>To Churn or not to Churn...</h1>
+        <h1>Predicting House Prices</h1>
       </div>
 
       <div class="para">
-        <h1 style="text-align: center;">Customer Churn Predictor</h1>
+        <h1 style="text-align: center;">House Price Predictor</h1>
 
-        <img src="/static/Images/CustomerChurn.jpeg" />
+        <img src="/static/Images/house.jpeg" />
 
         <div style="display: flexbox; margin: 0 auto 0 auto;text-align:center">
           <a class='myButton' href={{ url_for('homepage') }}><b>Predict</b></a>
@@ -32,9 +32,8 @@
 
         <br><br>
         
-        Churn is one of the biggest problems not only in the telecom industry but also in several other 
-        industries like gaming, credit card, cable service providers and many more. Using the 'Telecom 
-        Churn Prediction' dataset we shall go over some of the main reasons why customer churn happens 
+        Predicting house prices is one of the biggest problems in the Real Estate industry. Using the 'Miami 
+        House Prediction' dataset we shall go over some of the main reasons why customer churn happens 
         and also build a model to predict if a customer will churn or not.
 
         <br><br>
