@@ -8,3 +8,4 @@ numpy==1.21.0
 scikit-learn==1.1.1
 matplotlib==3.0.3
 pandas>=0.19
+xgboost==1.6.1
