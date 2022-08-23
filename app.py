@@ -25,7 +25,7 @@ def homepage():
 def get_data():
     Latitude = request.form.get('Latitude')
     Longitude = request.form.get('Longitude')
-    TotalCharges = request.form.get('Parcelno')
+    Parcelno = request.form.get('Parcelno')
     Landsqfoot = request.form.get('Landsqfoot')
     Lvgarea = request.form.get('Lvgarea')
     SpecFeat = request.form.get('SpecFeat')
