@@ -32,7 +32,7 @@ width:100%;
 }
 
 input[type=submit] {
-  background-color: #2d9fc6;
+  background-color: #5e5c5b;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -43,7 +43,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #F17925;
 
 }
 
