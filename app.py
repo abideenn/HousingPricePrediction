@@ -48,8 +48,8 @@ def show_data():
     data = get_data()
 
     logprice = model.predict(data)
-    actualprice= np.exp(logprice[0])
-    outcome = 'The price of the house is approximately '+str(actualprice)
+    actualprice= int(np.exp(logprice[0]))
+    outcome = 'The price of the house is approximately $'+str(actualprice)
     return render_template('results.html',result=outcome)
 
 if __name__ == "__main__":
